@@ -68,13 +68,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Google Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
-
-PRODUCT_PACKAGES += \
-    GoogleCamera
-
 # Properties
 -include device/xiaomi/tissot/prop.mk
 
