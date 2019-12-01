@@ -41,3 +41,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="tissot-user 9 PKQ1.180917.001 V10.0.9.0.PDHMIXM release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:9/PKQ1.180917.001/V10.0.9.0.PDHMIXM:user/release-keys"
