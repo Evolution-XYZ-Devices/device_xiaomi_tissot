@@ -23,6 +23,10 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tissot
+TARGET_RECOVERY_DEVICE_MODULES := libinit_tissot
+
 # Kernel
 TARGET_KERNEL_CONFIG := lightning-tissot_defconfig
 
@@ -40,11 +44,6 @@ VENDOR_SECURITY_PATCH := 2019-05-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# TWRP Support
-ifeq ($(BUILD_TWRP),true)
-include $(DEVICE_PATH)/twrp.mk
-endif
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
