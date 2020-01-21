@@ -28,7 +28,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tissot
 TARGET_RECOVERY_DEVICE_MODULES := libinit_tissot
 
 # Kernel
-TARGET_KERNEL_CONFIG := lightning-tissot_defconfig
+TARGET_KERNEL_CONFIG := tissot_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
