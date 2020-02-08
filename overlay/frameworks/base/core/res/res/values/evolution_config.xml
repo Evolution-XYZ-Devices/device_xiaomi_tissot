@@ -21,4 +21,7 @@
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
+    
+    <!-- Does the device have a Soli sensor? -->
+    <bool name="config_has_Soli">false</bool>
 </resources>
