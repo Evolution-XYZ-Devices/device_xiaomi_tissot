@@ -29,6 +29,8 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 # A/B
 AB_OTA_UPDATER := true
 
+TARGET_PIXEL_CHARGE_ANIM := true
+
 AB_OTA_PARTITIONS += \
     boot \
     system
