@@ -60,4 +60,7 @@ void vendor_load_properties() {
     property_override("ro.apex.updatable", "true");
     property_override("ro.control_privapp_permissions", "log");
     property_override("ro.oem_unlock_supported", "0");
+    property_override("org.evolution.build_donate_url", "https://paypal.me/dominikpro");
+    property_override("org.evolution.build_maintainer", "Dominik Procházka");
+    property_override("org.evolution.build_support_url", "https://t.me/EvolutionXTissot");
 }
