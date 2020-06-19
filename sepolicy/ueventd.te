@@ -1,0 +1,2 @@
+allow ueventd debugfs:file { getattr };
+allow ueventd debugfs_wakeup_sources:file { getattr };
