@@ -48,11 +48,5 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-08-01
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
-    /vendor/lib64/libgf_ca.so|fakelogprint.so \
-    /vendor/lib64/libgf_hal.so|fakelogprint.so
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk

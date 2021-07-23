@@ -13,6 +13,15 @@ function blob_fixup() {
 	vendor/lib/libmmcamera2_sensor_modules.so)
 	    sed -i 's|/system/etc/camera/|/vendor/etc/camera/|g' "${2}"
 	    ;;
+        vendor/lib64/libgf_ca.so)
+            "${PATCHELF_0_8}" --add-needed "fakelogprint.so" "${2}"
+            ;;
+        vendor/lib64/libgf_hal.so)
+            "${PATCHELF_0_8}" --add-needed "fakelogprint.so" "${2}"
+            ;;
+        vendor/lib64/gf_fingerprint.goodix.default.so)
+            "${PATCHELF_0_8}" --add-needed "fakelogprint.so" "${2}"
+            ;;
     esac
 }
 
