@@ -19,7 +19,7 @@ function blob_fixup() {
         vendor/lib64/libgf_hal.so)
             "${PATCHELF_0_8}" --add-needed "fakelogprint.so" "${2}"
             ;;
-        vendor/lib64/gf_fingerprint.goodix.default.so)
+        vendor/lib64/hw/gf_fingerprint.goodix.default.so)
             "${PATCHELF_0_8}" --add-needed "fakelogprint.so" "${2}"
             ;;
     esac
